@@ -42,35 +42,35 @@
                     ==========================================================      -->
             <div class="my-4 py-2">
                 <h6 class="fw-bold">Memory</h6>
-                <div>
-                    <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
-                    <label class="btn border border-secondary" for="option1">8GB unified memory</label>
+                <div class="">
+                    <input type="radio" class="btn-check" name="memory" id="memory-8gb" value="1">
+                    <label class="btn border border-secondary" for="memory-8gb">8GB unified memory</label>
 
-                    <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                    <label class="btn border border-secondary" for="option2">16GB unified memory</label>
+                    <input type="radio" class="btn-check" name="memory" id="memory-16gb" value="2">
+                    <label class="btn border border-secondary" for="memory-16gb">16GB unified memory</label>
                 </div>
             </div>
             <div class="my-4 py-2">
                 <h6 class="fw-bold">Storage</h6>
-                <div>
-                    <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" checked>
-                    <label class="btn border border-secondary" for="option3">256GB SSD storage</label>
+                <div class="">
+                    <input type="radio" class="btn-check" name="storage" id="storage-256gb" value="1">
+                    <label class="btn border border-secondary" for="storage-256gb">256GB SSD storage</label>
 
-                    <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
-                    <label class="btn border border-secondary" for="option4">512GB SSD storage</label>
+                    <input type="radio" class="btn-check" name="storage" id="storage-512gb" value="2">
+                    <label class="btn border border-secondary" for="storage-512gb">512GB SSD storage</label>
 
-                    <input type="radio" class="btn-check" name="options" id="option5" autocomplete="off">
-                    <label class="btn border border-secondary" for="option5">1TB SSD storage</label>
+                    <input type="radio" class="btn-check" name="storage" id="storage-1tb" value="3">
+                    <label class="btn border border-secondary" for="storage-1tb">1TB SSD storage</label>
                 </div>
             </div>
             <div class="my-4 py-2">
                 <h6 class="fw-bold">Choose your delivery option</h6>
-                <div>
-                    <input type="radio" class="btn-check" name="options" id="option6" autocomplete="off" checked>
-                    <label class="btn border border-secondary" for="option6">Friday, Free prime delivery</label>
+                <div class="">
+                    <input type="radio" class="btn-check" name="delivery" id="delivery-normal" value="1">
+                    <label class="btn border border-secondary" for="delivery-normal">Friday, Free prime delivery</label>
 
-                    <input type="radio" class="btn-check" name="options" id="option7" autocomplete="off">
-                    <label class="btn border border-secondary" for="option7">Today, Delivery charge $20</label>
+                    <input type="radio" class="btn-check" name="delivery" id="delivery-urgent" value="2">
+                    <label class="btn border border-secondary" for="delivery-urgent">Today, Delivery charge $20</label>
                 </div>
             </div>
 
@@ -83,25 +83,25 @@
                         <tbody>
                             <tr>
                                 <th scope="row">Best Price</th>
-                                <th scope="row">$1299</th>
+                                <th scope="row">$<span id="best-price">1299</span></th>
                             </tr>
                             <tr>
                                 <th scope="row">Extra Memory Cost</th>
-                                <th scope="row">$0</th>
+                                <th scope="row">$<span id="extra-memory">0</span></th>
                             </tr>
                             <tr>
                                 <th scope="row">Extra Storage Cost</th>
-                                <th scope="row">$0</th>
+                                <th scope="row">$<span id="extra-storage">0</span></th>
                             </tr>
                             <tr>
                                 <th scope="row">Delivery Charge</th>
-                                <th scope="row">$0</th>
+                                <th scope="row">$<span id="delivery-charge">0</span></th>
                             </tr>
                         </tbody>
                         <tfoot>
                             <tr>
                                 <th scope="row">Total Price</th>
-                                <th scope="row">$1299</th>
+                                <th scope="row">$<span id="total-price">1299</span></th>
                             </tr>
                         </tfoot>
                     </table>
