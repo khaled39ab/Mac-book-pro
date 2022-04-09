@@ -18,7 +18,7 @@
     <header class="text-center my-4">
         <h1>Mac Book Pro</h1>
     </header>
-    <main class="row gy-4">
+    <main class="row gy-4 mt-3 border-top">
         <section class="col-sm-5 col-md-6">
             <img class="img-fluid" src="Images/mac.png" alt="">
 
@@ -63,8 +63,55 @@
                     <label class="btn border border-secondary" for="option7">Today, Delivery charge $20</label>
                 </div>
             </div>
+
+            <!-- Calculate area  -->
+            <div class="my-4">
+                <div class="col-sm-5 col-md-6">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Best Price</th>
+                                <th scope="row">$1299</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">Extra Memory Cost</th>
+                                <th scope="row">$0</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">Extra Storage Cost</th>
+                                <th scope="row">$0</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">Delivery Charge</th>
+                                <th scope="row">$0</th>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th scope="row">Total Price</th>
+                                <th scope="row">$1299</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div>
+                        <h6>Add Promo code</h6>
+                        <div class="row">
+                            <div class="col-sm-4 col-md-8">
+                                <input class="form-control" type="text">
+                            </div>
+                            <div class="col-sm-2 col-md-4">
+                                <button type="button" class="btn btn-danger">Apply</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+    <footer class="mb-4 pb-4">
+        <hr>
+        <h2 class="text-center">Total: $1299</h2>
+    </footer>
 
     <script src="JS/app.js"></script>
 </body>
