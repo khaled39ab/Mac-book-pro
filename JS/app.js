@@ -1,3 +1,4 @@
+//Radio button section
 document.getElementById("extra-parts").addEventListener("input", (e) => {
     const bestPriceText = document.getElementById("best-price");
     const bestPrice = parseInt(bestPriceText.innerText);
@@ -16,7 +17,6 @@ document.getElementById("extra-parts").addEventListener("input", (e) => {
     const deliveryCharge = parseInt(deliveryChargeText.innerText);
 
     const grandTotalText = document.getElementById("grand-total");
-    const grandTotal = parseInt(grandTotalText.innerText);
 
     if (e.target.getAttribute('name') == "memory") {
         if (e.target.value == 2) {
