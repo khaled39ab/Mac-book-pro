@@ -38,37 +38,39 @@
             <!--    ==========================================================
                     +++++++++++++++++ Extra Parts Selection ++++++++++++++++++
                     ==========================================================      -->
-            <div class="my-4 py-2">
-                <h6 class="fw-bold">Memory</h6>
-                <div class="">
-                    <input type="radio" class="btn-check" name="memory" id="memory-8gb" value="1">
-                    <label class="btn border border-secondary" for="memory-8gb">8GB unified memory</label>
-
-                    <input type="radio" class="btn-check" name="memory" id="memory-16gb" value="2">
-                    <label class="btn border border-secondary" for="memory-16gb">16GB unified memory</label>
+            <div id="extra-parts">
+                <div class="my-4 py-2">
+                    <h6 class="fw-bold">Memory</h6>
+                    <div class="">
+                        <input type='radio' class="btn-check" name="memory" id="memory-8gb" value="1">
+                        <label class="btn border border-secondary" for="memory-8gb">8GB unified memory</label>
+    
+                        <input type='radio' class="btn-check" name="memory" id="memory-16gb" value="2">
+                        <label class="btn border border-secondary" for="memory-16gb">16GB unified memory</label>
+                    </div>
                 </div>
-            </div>
-            <div class="my-4 py-2">
-                <h6 class="fw-bold">Storage</h6>
-                <div class="">
-                    <input type="radio" class="btn-check" name="storage" id="storage-256gb" value="1">
-                    <label class="btn border border-secondary" for="storage-256gb">256GB SSD storage</label>
-
-                    <input type="radio" class="btn-check" name="storage" id="storage-512gb" value="2">
-                    <label class="btn border border-secondary" for="storage-512gb">512GB SSD storage</label>
-
-                    <input type="radio" class="btn-check" name="storage" id="storage-1tb" value="3">
-                    <label class="btn border border-secondary" for="storage-1tb">1TB SSD storage</label>
+                <div class="my-4 py-2">
+                    <h6 class="fw-bold">Storage</h6>
+                    <div class="">
+                        <input type="radio" class="btn-check" name="storage" id="storage-256gb" value="1">
+                        <label class="btn border border-secondary" for="storage-256gb">256GB SSD storage</label>
+    
+                        <input type="radio" class="btn-check" name="storage" id="storage-512gb" value="2">
+                        <label class="btn border border-secondary" for="storage-512gb">512GB SSD storage</label>
+    
+                        <input type="radio" class="btn-check" name="storage" id="storage-1tb" value="3">
+                        <label class="btn border border-secondary" for="storage-1tb">1TB SSD storage</label>
+                    </div>
                 </div>
-            </div>
-            <div class="my-4 py-2">
-                <h6 class="fw-bold">Choose your delivery option</h6>
-                <div class="">
-                    <input type="radio" class="btn-check" name="delivery" id="delivery-normal" value="1">
-                    <label class="btn border border-secondary" for="delivery-normal">Friday, Free prime delivery</label>
-
-                    <input type="radio" class="btn-check" name="delivery" id="delivery-urgent" value="2">
-                    <label class="btn border border-secondary" for="delivery-urgent">Today, Delivery charge $20</label>
+                <div class="my-4 py-2">
+                    <h6 class="fw-bold">Choose your delivery option</h6>
+                    <div class="">
+                        <input type="radio" class="btn-check" name="delivery" id="delivery-normal" value="1">
+                        <label class="btn border border-secondary" for="delivery-normal">Friday, Free prime delivery</label>
+    
+                        <input type="radio" class="btn-check" name="delivery" id="delivery-urgent" value="2">
+                        <label class="btn border border-secondary" for="delivery-urgent">Today, Delivery charge $20</label>
+                    </div>
                 </div>
             </div>
 
@@ -107,10 +109,10 @@
                         <h6>Add Promo code</h6>
                         <div class="row">
                             <div class="col-sm-4 col-md-8">
-                                <input class="form-control" type="text">
+                                <input class="form-control" type="text" id="promo-input">
                             </div>
                             <div class="col-sm-2 col-md-4">
-                                <button type="button" class="btn btn-danger">Apply</button>
+                                <button type="button" class="btn btn-danger" id="apply-btn">Apply</button>
                             </div>
                         </div>
                     </div>

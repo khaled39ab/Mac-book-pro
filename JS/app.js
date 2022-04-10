@@ -1,4 +1,4 @@
-document.addEventListener('input', (e) => {
+document.getElementById("extra-parts").addEventListener("input", (e) => {
     const bestPriceText = document.getElementById("best-price");
     const bestPrice = parseInt(bestPriceText.innerText);
 
@@ -82,5 +82,22 @@ document.addEventListener('input', (e) => {
 
             grandTotalText.innerText = totalPrice;
         }
+    }
+});
+
+//Promo code apply button
+document.getElementById("apply-btn").addEventListener("click", function(){
+    const promoCodeText = document.getElementById("promo-input");
+    const promoCode = promoCodeText.value;
+    if(promoCode === "steveKaku"){
+        const grandTotalText = document.getElementById("grand-total");
+        const totalPriceText = document.getElementById("total-price");
+        const totalPrice = totalPriceText.innerText;
+        grandTotalText.innerText = Math.ceil(totalPrice * 0.80);
+
+        promoCodeText.value = "";
+    } else {
+        alert("Wrong Promo Code");
+        promoCodeText.value = "";
     }
 });
