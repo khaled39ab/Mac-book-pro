@@ -1,3 +1,7 @@
 .btn-check:hover{
     background-color: rgb(223, 155, 65);
 }
+#pay-message{
+    font-size: 0.75em;
+    color: blueviolet;
+}
